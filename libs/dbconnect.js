@@ -1,6 +1,6 @@
 // Nhớ cài Mongoose
 //  npm      i       --S      mongoose
-/*const mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
 
  
@@ -15,7 +15,7 @@ const url = "mongodb+srv://" +
     userName + ":" + userPassword +     
     "@cluster0.x8ieg.mongodb.net/" + dbName +
     "?retryWrites=true&w=majority";
-*/
+
 ///////////////////////////////////////////////////a
  
 
