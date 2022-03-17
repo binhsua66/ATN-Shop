@@ -1,5 +1,10 @@
- Nhớ cài Mongoose
-  npm      i       --S      mongoose
+// Nhớ cài Mongoose
+//  npm      i       --S      mongoose
+/*const mongoose = require("mongoose");
+
+
+ 
+
 const userName = "bao2002";
 const userPassword = "newpasss";
 
@@ -10,14 +15,9 @@ const url = "mongodb+srv://" +
     userName + ":" + userPassword +     
     "@cluster0.x8ieg.mongodb.net/" + dbName +
     "?retryWrites=true&w=majority";
-
- 
- 
-
+*/
 ///////////////////////////////////////////////////a
-
-
-
+ 
 
 /////////////////////////////////////////////////////////a
 function connectDB(xURL) {
