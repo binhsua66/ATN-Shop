@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+{{>head title=this.title subpage='Add' }}
+
+<body>
+    <div>
+        {{>header  title=this.title}}
+    </div>
+    
+
+    <main>
+        <div class="container">
+            <H1 height="150px" style="margin-top: 80px;">{{title}}</H1>
+           
+            <form action="/product" method="POST" >
+                <BR> ProductName:
+                <input type="text" class="form-control" name="ProductName" id="ProductName"required >
+                <BR> ProductCode :
+                <input type="text" class="form-control" name="ProductCode" id="ProductCode"required >
+                <BR> Price:
+                <input type="number" class="form-control" name="Price" id="Price"required >
+                <BR> Brand:
+                <input type="text" class="form-control" name="Brand" id="Brand"required >
+                <BR> ImgLink:
+                <input type="text" class="form-control" name="ImgLink" id="ImgLink" required >
+                <input type="submit"  class="btn btn-primary" value="Create"> 
+            </form>
+                   
+    </main>
+        <div class="product-button-back-to-product">
+            <a  href="/product/read" > 
+                <button class="buy-button" > Back To View All Product </button>
+            </a>    
+        </div>
+    <style> 
+        .product-button-back-to-product{
+            margin-left: 115px;
+            margin-top: 20px;
+            border-radius: 5px;
+            width: 200px;
+            border-radius: 5px;
+        }
+    </style>
+</div> 
+
+    {{>footer}}
+</body>
+
+</html>

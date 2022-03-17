@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+{{>head title=this.title subpage='View' }}
+
+<body>
+    <div>
+        {{>header  title=this.title}}
+    </div>
+    <h1 class="readtitle" style="margin-top:71px; text-align:center" > All Product</h1>
+
+            <div class="add-button">
+                <a  href="/product/new" > 
+                    <button class="addd-button" > Add Product </button>
+                </a>    
+            </div>
+    <table>
+        <tr class="structure" style="height: 40px; boder-radius: 5px;">
+            <th>Product Code</th>
+            <th>Image</th>
+            <th>Product Name</th>
+            <th>Product Brand</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+        {{#each product}}
+            <tr> 
+                <td> - {{ProductCode}}</td>
+                <td><img height="100px" top="100px " src="./{{ImgLink}}" class="product-img"></td>
+                <td style="font-size: 20px;"> - {{ProductName}} </td>
+                <td> - {{Brand}}  </td>
+                <td>   {{Price}} VNĐ </td>
+                <td><a href="/delete/{{this._id}}" >Edit</a> &nbsp; | &nbsp; <a href="/delete/{{this._id}}" >Delete</a></td>
+            </tr>  
+        {{/each}}
+    </table>
+    {{>footer}}
+</body>
+<style>
+    table{
+        width: 90%;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto  ;
+    }
+    .structure{
+        background-color: rgb(169, 255, 255);
+        width: 100%;
+    }
+     tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 3px;
+    }
+    .product-read-all .readtitle{ /* Title All Product*/
+        text-align: center;
+        left: auto;
+        right: auto;
+        margin-bottom: 
+    }
+    .add-button{
+        font-size: 20px;
+        text-align: center;
+        width: 50% ;
+        margin-left: auto;
+        margin-right: auto;
+         
+        background-color:rgb(250, 250, 250);
+        border-radius: 5px;
+        height: 35px;
+    }
+    .addd-button{
+          font-size: 20px;
+        text-align: center;
+        width: 100% ;
+        right: auto;
+        left: auto;
+        background-color:rgb(250, 250, 250);
+        border-radius: 5px;
+        height: 35px;
+    }
+    .addd-button:hover{ /* hiệu ứng cho button  */
+        color: rgb(211, 211, 211);
+        background-color: black;
+    }
+    
+</style>
+
+
+</html>

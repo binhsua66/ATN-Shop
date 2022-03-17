@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+{{>head title=this.title subpage='Home' }}
+
+<body>
+    
+    <div class="main">
+        <div class="Header">
+             {{>header  title=this.title}}
+        </div>
+
+        <div class="Slider">
+            <div class="text-content">
+                <h4 class="text-heading">ATN Shop</h4>
+                <div class="text-description">Welcome to ATN Shop</div>
+            </div>
+        </div>
+
+        <div class="Content">
+                
+        </div>
+
+        <div class="footer">
+                {{>footer}}
+        </div>
+    </div>
+</body>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .main{
+
+    }
+     
+
+    .Slider{
+        position: relative;
+        margin-top: 56px;
+        padding-top: 50%;
+        background: url('/toybackground_6.jpg') top center / cover no-repeat;
+    }
+    .Content{
+
+    }
+    .Slider .text-content{
+        position: absolute;
+        top: 250px;
+         
+        width: 100%;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.774);
+    }
+
+    .Slider .text-heading{
+        font-size: 100PX;
+        font-weight: 700;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .Slider .text-description{
+        font-weight: 450;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: oblique;
+    }
+</style>
+</html>
